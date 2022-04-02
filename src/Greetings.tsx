@@ -6,7 +6,7 @@ type GreetingsProps = {
   mark?: string;
 };
 
-// component 설정
+// React.FC component 설정
 const Greetings: React.FC<GreetingsProps> = ({ name, mark = "!" }) => {
   return (
     <div>
