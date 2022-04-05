@@ -12,14 +12,14 @@ function MyForm({ onSubmit }: MyFormProps) {
 
   const { name, description } = form;
 
-  const onChange = (e: any) => {
+  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setForm({
       ...form,
       [name]: value,
     });
   };
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     onSubmit(form);
     setForm({
