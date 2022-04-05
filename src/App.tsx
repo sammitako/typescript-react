@@ -3,6 +3,7 @@ import Counter from "./Counter";
 import FunctionalGreetings from "./FunctionalGreetings";
 import Greetings from "./Greetings";
 import MyForm from "./MyForm";
+import ReducerSample from "./ReducerSample";
 
 function App() {
   const onClick = (name: string) => {
@@ -17,6 +18,7 @@ function App() {
       <FunctionalGreetings name="SEAN" onClick={onClick} />
       <Counter />
       <MyForm onSubmit={onSubmit} />
+      <ReducerSample />
     </>
   );
 }
