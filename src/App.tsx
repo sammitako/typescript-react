@@ -1,4 +1,6 @@
 import React from "react";
+import ContextReducerSample from "./ContextReducerSample";
+import { SampleProvider } from "./ContextSample";
 import Counter from "./Counter";
 import FunctionalGreetings from "./FunctionalGreetings";
 import Greetings from "./Greetings";
@@ -19,6 +21,9 @@ function App() {
       <Counter />
       <MyForm onSubmit={onSubmit} />
       <ReducerSample />
+      <SampleProvider>
+        <ContextReducerSample />
+      </SampleProvider>
     </>
   );
 }
